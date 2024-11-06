@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Chicle&family=Damion&family=Dancing+Script:wght@400..700&family=Pacifico&family=Rochester&family=Satisfy&family=Tangerine:wght@400;700&family=Yellowtail&display=swap');
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Chicle", serif;
+}
+
+body {
+  background-color: black;
+}
+
+.img{
+  width: 348px;
+  height: 348px;
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('images/hero-image.jpg') no-repeat center center;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+  }
+  
+  /* Buttons */
+  .btn-primary {
+    background-color: #ff6f61;
+    border: none;
+  }
+  .btn-primary:hover {
+    background-color: #ff4c3b;
+  }
+  
+  /* Card Hover Effect */
+  .card:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+  }
+  
+  /* Footer */
+  footer {
+    padding: 20px;
+  }
+  
