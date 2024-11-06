@@ -1,48 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Recipe Details - Foodie Finds</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Detail - Foodie Finds</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
-<body>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-black">
-    <a class="navbar-brand" style="color: palevioletred;" href="index.html">Foodie Finds</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a class="nav-link" style="color: white;" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" style="color: white;" href="recipes.html">Recipes</a></li>
-        <li class="nav-item"><a class="nav-link" style="color: white;" href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
+<body style="background-color: black;">
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container d-flex">
+                <a class="navbar-brand" style="color: palevioletred;" href="index.html">Foodie Finds</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav px-5">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="recipes.html">Recipes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-  <!-- Recipe Detail -->
-  <div class="container my-4">
-    <h2 class="text-white">Butter Naan</h2>
-    <img src="images/recipe5.jpg" class="img-fluid my-3" alt="Recipe Image">
-    
-    <h3 class="text-white">Ingredients</h3>
-    <ul class="list-group">
-      <li class="list-group-item"><input type="checkbox"> 1 cup flour</li>
-      <li class="list-group-item"><input type="checkbox"> 2 eggs</li>
-    </ul>
-    
-    <h3 class="mt-4 text-white">Instructions</h3>
-    <ol>
-      <li class="text-white">Step-by-step instruction here.</li>
-      <li class="text-white">Another step here.</li>
-    </ol>
+    <section>
+        <!-- Recipe Detail -->
+        <div class="container my-4">
+            <h2 class="text-white">Macarons</h2>
+            <img src="images/recipe5.jpg" class="img-fluid my-3" alt="Macaron Recipe Image">
+        
+            <h3 class="text-white">Ingredients</h3>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <label><input type="checkbox"> 1 cup almond flour</label>
+                </li>
+                <li class="list-group-item">
+                    <label><input type="checkbox"> 1 3/4 cups powdered sugar</label>
+                </li>
+                <li class="list-group-item">
+                    <label><input type="checkbox"> 3 large egg whites (room temperature)</label>
+                </li>
+                <li class="list-group-item">
+                    <label><input type="checkbox"> 1/4 cup granulated sugar</label>
+                </li>
+                <li class="list-group-item">
+                    <label><input type="checkbox"> Food coloring (optional)</label>
+                </li>
+            </ul>
+        
+            <h3 class="mt-4 text-white">Instructions</h3>
+            <ol class="text-white">
+                <li>Sift the almond flour and powdered sugar together into a bowl to remove any lumps.</li>
+                <li>In another bowl, beat the egg whites until frothy, then gradually add granulated sugar and continue to beat until stiff peaks form. Add food coloring if desired.</li>
+                <li>Fold the dry ingredients into the egg whites gently until the batter forms a "lava-like" consistency.</li>
+                <li>Pipe small circles of batter onto a lined baking sheet and let them rest for 20–30 minutes to form a skin.</li>
+                <li>Bake at 150°C (300°F) for 15–18 minutes. Let cool completely before adding fillings.</li>
+            </ol>
+        
+            <a href="recipes.html" style="background-color: rgb(182, 29, 105);" class="btn text-white">Back to Recipes</a>
+        </div>
+    </section>
 
-    <a href="recipes.html" class="btn btn-secondary mt-3">Back to Recipes</a>
-  </div>
+    <!-- Footer -->
+    <footer class="bg-black text-center py-3">
+        <p class="text-white">&copy; 2024 Foodie Finds. All rights reserved.</p>
+    </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
